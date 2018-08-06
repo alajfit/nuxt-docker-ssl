@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-docker-ssl",
+  "version": "1.0.0",
+  "description": "Nuxt Docker SSL Setup",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alajfit/nuxt-docker-ssl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alajfit/nuxt-docker-ssl/issues"
+  },
+  "homepage": "https://github.com/alajfit/nuxt-docker-ssl#readme",
+  "dependencies": {
+    "nuxt": "^1.4.2"
+  }
+}
