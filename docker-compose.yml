@@ -6,17 +6,20 @@ services:
     container_name: app
     ports:
       - "80:3000"
-      # - "443:443"
+      - "443:443"
     restart: always
+    volumes:
+      - certbot-webroot-SITENAME:/app/public/.well-known
+      - certbot-letsencrypt:/etc/letsencrypt
 
   certbot:
     build: ./certbot
     container_name: certbot
     restart: always
     volumes:
-      - certbot-webroot-evsoul:/webroots/evsoul.com/.well-known
+      - certbot-webroot-SITENAME:/webroots/SITENAME.com/.well-known
       - certbot-letsencrypt:/etc/letsencrypt
 
 volumes:
-  certbot-webroot-evsoul:
-  certbot-letsencrypt:
+  certbot-webroot-SITENAME: 
+  certbot-letsencrypt: 
